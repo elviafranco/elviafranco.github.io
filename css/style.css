@@ -1,0 +1,307 @@
+
+body {
+    font-family: 'Wire One';
+    /* font-family: 'Wire One', sans-serif; */
+    /* font-size: 2vw; */
+    font-size: 36px;
+    color: #222222;
+    background: #E6EDF5;
+    overflow-x: hidden; 
+    margin: auto;
+}
+
+h2 {
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;    
+      font-size: 36px;  
+      /* font-size: 2vw; */
+      padding: 10px;
+      margin-left: 20%;
+      margin-right: 20%;
+      color: #222222;
+      /* line-height: 1;
+      margin: 0;
+      padding: 1.25rem 2rem;
+      color: #49494A;
+      position: left;
+      top: 50%;
+      left: 50%;
+      letter-spacing: .2em;
+      font-size: 2vw;
+      color: #222222;
+      padding-top: .5rem;
+      padding-bottom: .5rem;   */
+}
+
+img {
+  width: 400px;
+  height: auto;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Fancy about page h1 header */
+
+.image {
+  /* position: relative; */
+  position: relative;
+  overflow: hidden;
+
+}
+  h1 {
+    /* font-size: 6vw; */
+    line-height: 1;
+    margin: 0;
+    padding: 1.25rem 2rem;
+    color: #49494A;
+    /* text-transform: uppercase; */
+    animation: fadeIn 0s 0.6s;
+    animation-fill-mode: backwards;
+    /* position: fixed; */
+    position: left;
+    top: 50%;
+    left: 50%;
+    letter-spacing: .2em;
+    /* transform: translate(-50%, -100%); */
+    /* transform: translate(-40%, -70%); */
+    font-size: 2vw;
+    /* background-color: #A70B21; */
+    /* color: white; */
+    color: #222222;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;  
+    padding-top: .5rem;
+    padding-bottom: .5rem;  
+  }
+  
+  h1::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:  #A70B21;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;  
+    transform: translateX(-100%);
+    animation: secondaryImageOverlayIn 0.6s 0s, secondaryImageOverlayOut 0.6s 0.6s;
+    animation-fill-mode: both;
+  }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes secondaryImageOverlayIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes secondaryImageOverlayOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Fancy about page h1 header end */
+
+/* List items: social icons */
+li {
+    float:left;
+    list-style-type: none;
+}
+
+.contactCard {
+    display: block;
+    background-color: #A8031B;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding:0.50em 1.5em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  font-weight: 300;
+  background-color: #252525;
+  color: #818181;
+  text-align:center;
+  transition: all 0.2s;
+  /* padding:0.35em 1.2em; */
+  /* border-radius: 15px 50px 30px;  */
+  /* border: 0.1em solid #222222; */
+}
+
+.button:hover {
+  background-color: #444545; 
+  color: white;
+}
+  
+
+/* Headshot image  */
+.headshot {
+    /* border-radius: 15px; */
+    border-radius: 15px 50px 30px; 
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 300px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #222222; /* Raisin Black */
+    /* background-color: #111; Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #EBEBEC; /* Isabelline */
+    /* color: #f1f1f1; */
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 300px; /* Same as the width of the sidebar */
+    padding: 20px 10px;
+    /* display: block;
+    background-color: #A70B21; */
+  }
+
+  .grid-container {
+    display: grid;
+    /* grid-gap: 50px 100px; */
+    /* grid-template-columns: auto, auto, auto; */
+    /* grid-template-rows: 80px 80px; */
+    grid-gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .grid-container > div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* text-align: center; */
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-item {
+    color: #222222;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    /* font-size: 30px; */
+    text-align: center;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;    
+  }
+
+
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+/* CSS Gradient Animation */
+  body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+  background: linear-gradient(-45deg, #EBEBEC, #DADADA, #A6A7A7, #A8031B);
+  /* background: linear-gradient(-45deg, #FFFFFF, #DADADA, #A6A7A7, #7B7B7B); */
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
