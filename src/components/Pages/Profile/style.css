@@ -1,0 +1,39 @@
+.icon {
+    font-size: 30px;
+ }
+ 
+ #linked, #git, #envelope, #pdf {
+     margin: 10px;
+ }
+ 
+ a {
+    color: #fff;
+    /* color: rgb(255, 182, 244);
+    text-shadow: 0 0 3vw rgb(255, 116, 223) */
+     /* color:#262626; */
+ }
+ 
+ a:hover {
+    color:rgb(102, 102, 103);
+    /* color: rgb(255, 182, 244);
+    text-shadow: 0 0 3vw rgb(255, 116, 223)
+  */
+}
+
+ .efont {
+    /* font-size: larger;
+    color: rgb(255, 182, 244);
+    text-shadow: 0 0 3vw rgb(255, 116, 223); */
+    font-weight: bold;
+    font-size: larger;
+    color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px rgb(255, 0, 204),
+      0 0 80px rgb(255, 0, 204),
+      0 0 90px rgb(255, 0, 204),
+      0 0 100px rgb(255, 0, 204),
+      0 0 150px rgb(255, 0, 204);
+ }
