@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.adce0c27.chunk.css",
+    "main.js": "/static/js/main.2cb6ccfc.chunk.js",
+    "main.js.map": "/static/js/main.2cb6ccfc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
+    "static/js/2.8dd00ceb.chunk.js": "/static/js/2.8dd00ceb.chunk.js",
+    "static/js/2.8dd00ceb.chunk.js.map": "/static/js/2.8dd00ceb.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.2a805fcd934f1663bf18617e159739bd.js": "/precache-manifest.2a805fcd934f1663bf18617e159739bd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.adce0c27.chunk.css.map": "/static/css/main.adce0c27.chunk.css.map",
+    "static/js/2.8dd00ceb.chunk.js.LICENSE": "/static/js/2.8dd00ceb.chunk.js.LICENSE",
+    "static/media/EFCV_2020.pdf": "/static/media/EFCV_2020.4451e2f5.pdf",
+    "static/media/FriendsClickyGame.png": "/static/media/FriendsClickyGame.0d96a4d4.png",
+    "static/media/GGM.png": "/static/media/GGM.ded0b91e.png",
+    "static/media/IMG_1173.jpg": "/static/media/IMG_1173.63cff984.jpg",
+    "static/media/QTFilm.png": "/static/media/QTFilm.822d269b.png",
+    "static/media/TimeScrapeNews.png": "/static/media/TimeScrapeNews.264548d7.png",
+    "static/media/burgerApp.png": "/static/media/burgerApp.6e334333.png",
+    "static/media/friendfinder.png": "/static/media/friendfinder.55a50b8a.png",
+    "static/media/logo.png": "/static/media/logo.eba1903e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2b20a0b.js",
+    "static/js/2.8dd00ceb.chunk.js",
+    "static/css/main.adce0c27.chunk.css",
+    "static/js/main.2cb6ccfc.chunk.js"
+  ]
+}
