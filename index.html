@@ -4,27 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b13f89a13e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b13f89a13e.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./resources/css/normalize.css" />
     <link rel="stylesheet" href="./resources/css/style.css" />
     <title>Elvia Franco Design</title>
   </head>
   <body>
     <div class="wrapper">
-      <!-- Toggle -->
-      <div>
-        <button class="float"><i class="fa-solid fa-brightness"></i> Light</button>
-      </div>
-      <h1>Elvia Franco</h1>
-      <h2>Your personal designer, strategist and developer</h2>
+      <!-- Header  -->
+      <header>
+        <div class="heading-container">
+          <div class="portrait-container">
+            <img src="./resources/images/IMG_4683.jpg" />
+          </div>
+          <div class="heading-content">
+            <h1>Elvia Franco</h1>
+            <h2>Product Designer</h2>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li>Overview</li>
+            <li>Enzo</li>
+            <li>Kite</li>
+            <li>Lesgo</li>
+          </ul>
+        </nav>
+        <!-- Toggle -->
+        <div>
+          <button class="float"><i class="fa-solid fa-brightness"></i></button>
+        </div>
+      </header>
       <div class="line"></div>
-      <!-- Work Section -->
-      <div class="row">
-        <div class="column one">
-          <main>
+      <!-- Main -->
+      <main>
+        <div class="row">
+          <!-- Work Section -->
+          <section class="section-projects">
             <h3>Latest Projects</h3>
             <h4>Design</h4>
             <div class="line"></div>
@@ -32,13 +57,14 @@
               <div class="content">
                 <p>Ohsi</p>
                 <p>
-                  Beat your daily grind with the cleanest and most affordable CBD.
+                  Beat your daily grind with the cleanest and most affordable
+                  CBD.
                 </p>
                 <p>Designed with Figma, tested with Maze, built with Shopify</p>
                 <a href="https://ohsicbd.com/"><button>Visit Site</button></a>
               </div>
               <div class="container">
-                <img src="./resources/images/Ohsi.png">
+                <img src="./resources/images/Ohsi.png" />
               </div>
             </div>
             <div class="line"></div>
@@ -53,7 +79,7 @@
                 <button>Learn More</button>
               </div>
               <div class="container">
-                <img src="./resources/images/Ohsi.png">
+                <img src="./resources/images/Ohsi.png" />
               </div>
             </div>
             <div class="line"></div>
@@ -68,30 +94,12 @@
                 <button>Learn More</button>
               </div>
               <div class="container">
-                <img src="./resources/images/Ohsi.png">
+                <img src="./resources/images/Ohsi.png" />
               </div>
             </div>
-          </main>
-        </div>
-        <!-- Header -->
-        <div class="column two">
-          <header>
-            <div class="grid">
-              <div class="big">
-                <img src="./resources/images/headshot.jpg">
-              </div>
-              <div class="imgcontainer">
-                <div class="box c">
-                  <img src="./resources/images/maj.jpg">
-                </div>
-                <div class="box d">
-                  <img src="./resources/images/mao.jpg">
-                </div>
-                <div>
-                  <button><i class="fa-solid fa-paper-plane"></i> Get in touch</button>
-                </div>
-              </div>
-            </div>
+          </section>
+          <!-- About Section -->
+          <section class="section-about">
             <h3>About</h3>
             <p>
               Elvia Franco is a digital jack of all trades with experience in
@@ -110,7 +118,15 @@
               User Testing, MongoDB, MySQL, Node JS, NPM, React JS, React
               Native, Sequelize, Sketch
             </p>
-            <p><strong>Personality: </strong><a href="https://www.16personalities.com/intj-personality">INTJ</a></p>
+            <p>
+              <strong>Personality: </strong
+              ><a href="https://www.16personalities.com/intj-personality"
+                >INTJ</a
+              >
+            </p>
+            <button>
+              <i class="fa-solid fa-paper-plane"></i> Get in touch
+            </button>
             <div class="line"></div>
             <h3>Profiles</h3>
             <i class="fa-brands fa-github-square fa-3x"></i>
@@ -120,21 +136,22 @@
             <h3>Top Albums</h3>
             <div class="image-container">
               <div class="album">
-                <img src="./resources/images/debut.png">
+                <img src="./resources/images/debut.png" />
               </div>
               <div class="album">
-                <img src="./resources/images/villians.png">
+                <img src="./resources/images/villians.png" />
               </div>
               <div class="album">
-                <img src="./resources/images/purplenoon.png">
+                <img src="./resources/images/purplenoon.png" />
               </div>
               <div class="album">
-                <img src="./resources/images/prmlscrm.png">
+                <img src="./resources/images/prmlscrm.png" />
               </div>
             </div>
-          </header>
+          </section>
         </div>
-      </div>
+      </main>
+      <!-- Footer -->
       <footer>
         <p><i class="fa-solid fa-copyright"></i> Elvia Franco 2022</p>
       </footer>
