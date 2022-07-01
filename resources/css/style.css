@@ -1,9 +1,32 @@
 /* Universal Styles */
 
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Variables */
+body {
+  --bg-light: #FFFFFF;
+  --bg-dark: #212121;
+  --text-light: #FFFFFF;
+  --text-light-secondary: #d2d2d2;
+  --text-light-tertiary: #b5b5b5;
+  --text-dark: #161616;
+  --text-dark-secondary: #212121;
+  --text-dark-tertiary: #464646;
+  --accent: #E926C2;
+
+  /* CSS Style */
+  background-color: var(--bg-light);
+  color: var(--text-dark-secondary);
+}
+
+
+
+
 html, body {
   padding: 0;
   margin: 0;
-  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
