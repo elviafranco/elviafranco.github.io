@@ -19,7 +19,7 @@ body {
 
   /* CSS Style */
   background-color: var(--bg-light);
-  color: var(--bg-dark);
+  color: var(--dark-primary);
 }
 
 /* Dark Mode */
@@ -47,10 +47,12 @@ h1 {
   font-size: 2rem;
   line-height: 36px;
   margin: 0;
+  color: var(--bg-dark);
 }
 
 h2 {
   margin: 0;
+  color: var(--bg-dark);
 }
 
 .title {
@@ -62,6 +64,7 @@ h2 {
 h3 {
   font-size: 1.14rem;
   line-height: 24px;
+  color: var(--bg-dark);
 }
 
 ::selection {
