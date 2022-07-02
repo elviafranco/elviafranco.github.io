@@ -8,21 +8,19 @@
 body {
   --bg-light: #FFFFFF;
   --bg-dark: #212121;
-  --text-light: #FFFFFF;
-  --text-light-secondary: #d2d2d2;
-  --text-light-tertiary: #b5b5b5;
-  --text-dark: #161616;
-  --text-dark-secondary: #212121;
-  --text-dark-tertiary: #464646;
+  --light-primary: #E0E0E0;
+  --light-secondary: #C2C2C2;
+  --btn-bg: #F5F5F5;
+  --dark-primary: #424242;
+  --dark-secondary: #616161;
   --accent: #E926C2;
+  --linkedin: #0072B1;
+  --twitter: #1DA1F2;
 
   /* CSS Style */
   background-color: var(--bg-light);
-  color: var(--text-dark-secondary);
+  color: var(--bg-dark);
 }
-
-
-
 
 html, body {
   padding: 0;
@@ -31,7 +29,6 @@ html, body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #212121;
   width: 100%;
 }
 
@@ -40,14 +37,17 @@ html, body {
 h1 {
   font-size: 2rem;
   line-height: 36px;
-  color: #161616;
   margin: 0;
 }
 
 h2 {
-  font-size: 1.25rem;
+  margin: 0;
+}
+
+.title {
   line-height: 28px;
   margin: 0;
+  color: var(--dark-primary)
 }
 
 h3 {
@@ -55,30 +55,25 @@ h3 {
   line-height: 24px;
 }
 
-span {
-  font-size: 12px;
-  color:#464646;
-}
-
 ::selection {
-  background: #E926C2;
-  color: white;
+  background: var(--accent);
+  color: var(--bg-light);
 }
 
 .line {
   display: block;
   height: 1px;
-  background: #D3D3D3;
-  margin: 16px 0;
+  background: var(--light-primary);
+  margin: 2rem 0;
 }
 
 a {
   text-decoration: none;
-  color: #212121;
+  color: var(--bg-dark);
 }
 
 a:hover {
-  color:#E926C2;
+  color: var(--accent);
 }
 
 .fa-brands {
@@ -86,54 +81,50 @@ a:hover {
 }
 
 .fa-github-square {
-  color: #161616;
+  color: var(--bg-dark);
 }
 
 .fa-linkedin {
-  color: #0072B1;
+  color: var(--linkedin);
 }
 
 .fa-twitter-square {
-  color: #1DA1F2;
+  color: var(--twitter);
 }
 
 button, li {
   border: none;
   outline: none;
-  background-color: #fff;
-  color: #212121;
-  border: 1px solid #E0E0E0;
+  background-color: var(--bg-light);
+  color: var(--bg-dark);
+  border: 1px solid var(--light-primary);
   font-weight: 500;
   line-height: 20px;
   padding: 0.6rem 1rem;
   border-radius: 4px;
-  box-shadow:0px 1px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
   transition: all .5s ease;
 }
 
 button:hover, li:hover {
-  background-color: #F5F5F5;
+  background-color: var(--btn-bg);
 }
-
-button:focus, li:hover {
-  border: 3px solid rgba(228, 49, 198, 0.2);
-}
-
 button:active, li:hover {
-  background: #EDEDED;
-  border: 1px solid #C2C2C2;
+  background: var(--btn-bg);
+  border: 1px solid var(--light-primary);
 }
 
 /* Layout */
 
 .wrapper {
-  padding: 32px 24px 0 24px;
+  padding: 3rem 3rem 0 3rem;
 }
 
 .row {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 .section {
@@ -144,27 +135,32 @@ button:active, li:hover {
 
 .section-projects {
   flex: 2;
-  margin-right: 2rem;
+  padding: 0 2rem 2rem 0;
 }
 
 .section-about {
   flex: 1;
-  border-left: 1px solid #D3D3D3;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  margin-top: 6px;
+  border-left: 1px solid var(--light-primary);
+  padding: 0 0 2rem 2rem;
 }
 
 @media only screen and (max-width: 640px) {
+  .wrapper {
+    padding: 2rem 2rem 0 2rem;
+  }
   .row {
     display: block;
   }
   .section {
     width: 100%;
   }
+  .section-projects {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
   .section-about {
     border-left: none;
-    border-top: 1px solid #D3D3D3;
+    border-top: 1px solid var(--light-primary);
     padding: 0;
   }
 }
@@ -181,7 +177,7 @@ header {
 .heading-container {
   display: flex;
   align-items: center;
-  margin: 0 0 8px 0;
+  margin: 0 0 1rem 0;
 }
 
 .portrait-container {
@@ -222,7 +218,7 @@ nav ul li {
 
 .content {
   flex: 1;
-  padding: 8px;
+  padding-right: 2rem;
 }
 
 .container{
@@ -267,6 +263,6 @@ nav ul li {
 /* Footer */
 footer {
   display: flex;
-  border-top: #D3D3D3 solid 1px;
+  border-top: 1px solid var(--light-primary);
   align-items: center;
 }
