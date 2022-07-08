@@ -25,7 +25,7 @@
       <header>
         <div class="heading-container">
           <div class="portrait-container">
-            <img src="./resources/images/IMG_4669-2.jpg" />
+            <img src="./resources/images/headshot.jpg" alt="Headshot" />
           </div>
           <div class="heading-content">
             <h1>Elvia Franco</h1>
@@ -68,29 +68,35 @@
               </div>
             </div>
           </section>
-          <!-- Define -->
-          <section class="section-phase"></section>
-          <!-- Develop -->
-          <section class="section-phase"></section>
-          <!-- Deliver -->
-          <section class="section-phase"></section>
         </div>
         <div class="line"></div>
         <div class="row">
           <!-- Case Study Process -->
           <section class="section-process">
             <ul>
-              <a href="#" onclick="showContent()"><li>Discover</li></a>
-              <a href="#"><li>Define</li></a>
-              <a href="#"><li>Develop</li></a>
-              <a href="#"><li>Deliver</li></a>
+              <a href="#" id="discover-btn"><li>Discover</li></a>
+              <a href="#" id="define-btn"><li>Define</li></a>
+              <a href="#" id="develop-btn"><li>Develop</li></a>
+              <a href="#" id="deliver-btn"><li>Deliver</li></a>
             </ul>
           </section>
         </div>
         <div class="row">
           <!-- Discover -->
-          <section class="section-phase">
-            <p>This is a test to show and hide the paragraph!</p>
+          <section id="discover" class="hidden">
+            <p>This is discover content!</p> 
+          </section>
+          <!-- Define -->
+          <section id="define" class="hidden">
+            <p>This is define content!</p>
+          </section>
+          <!-- Develop -->
+          <section id="develop" class="hidden">
+            <p>This is develop content!</p>
+          </section>
+          <!-- Deliver -->
+          <section id="deliver" class="hidden">
+            <p>This is deliver content!</p>
           </section>
         </div>
       </main>

@@ -121,7 +121,7 @@ button, li {
 button:hover, li:hover {
   background-color: var(--btn-bg);
 }
-button:active, li:hover {
+button:active, li:active {
   background: var(--btn-bg);
   border: 1px solid var(--light-primary);
 }
@@ -136,7 +136,7 @@ button:active, li:hover {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .section {
@@ -253,6 +253,23 @@ ul li {
   display: block;
   object-fit: cover;
   border-radius: 8px;
+}
+
+@media only screen and (max-width: 640px) {
+  .project {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: center;
+  }
+
+  .container > img {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Template Secondary Nav */
+.hidden {
+  display: none;
 }
 
 /* About */
