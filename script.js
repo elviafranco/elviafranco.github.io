@@ -1,3 +1,12 @@
+const activePage = window.location.pathname;
+
+const navLinks = document.querySelectorAll('nav li a');
+navLinks.forEach(link => {
+    if(link.href.includes(activePage)){
+        link.parentNode.classList.add('active');
+    }
+})
+
 // Dark Mode Toggle
 function toggleMode(mode) {
     mode.classList.toggle('fa-moon-stars');
@@ -39,7 +48,3 @@ function openDevelop() {
 discoverbtn.onclick = openDiscover;
 definebtn.onclick = openDefine;
 developbtn.onclick = openDevelop;
-
-
-const activePage = window.location;
-console.log(activePage);
