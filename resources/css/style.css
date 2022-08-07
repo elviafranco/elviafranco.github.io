@@ -208,7 +208,8 @@ header {
   width: 56px;
   height: 56px;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 50%;
+  /* border-radius: 8px; */
   margin-right: 8px;
 }
 
