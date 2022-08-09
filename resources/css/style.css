@@ -128,7 +128,7 @@ button:hover, ul > li:hover {
 }
 
 .on {
-  border: 2px solid var(--accent);
+  border: 1px solid var(--light-primary);
 }
 
 
@@ -202,37 +202,16 @@ header {
   justify-content: space-between;
 }
 
-/* .heading-container {
-  display: flex;
-  align-items: center;
-  margin: 0 0 1rem 0;
-} */
-
-/* .portrait-container {
-  width: 56px;
-  height: 56px;
-  overflow: hidden;
-  border-radius: 50%;
-} */
-
 .portrait-container {
   background:url('/resources/images/headshot.jpg');
   background-size: cover;
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
 }
 
-/* .portrait-container > img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
-} */
-
 ul {
   list-style-type: none;
-  /* margin: 0; */
   padding: 0;
   display: flex;
 }
