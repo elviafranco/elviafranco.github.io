@@ -127,6 +127,10 @@ button:hover, ul > li:hover {
   border: 1px solid var(--light-primary);
 }
 
+.on {
+  border: 2px solid var(--accent);
+}
+
 
 /* Layout */
 
@@ -198,27 +202,33 @@ header {
   justify-content: space-between;
 }
 
-.heading-container {
+/* .heading-container {
   display: flex;
   align-items: center;
   margin: 0 0 1rem 0;
-}
+} */
 
-.portrait-container {
+/* .portrait-container {
   width: 56px;
   height: 56px;
   overflow: hidden;
   border-radius: 50%;
-  /* border-radius: 8px; */
-  margin-right: 8px;
+} */
+
+.portrait-container {
+  background:url('/resources/images/headshot.jpg');
+  background-size: cover;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
 }
 
-.portrait-container > img {
+/* .portrait-container > img {
   display: block;
   object-fit: cover;
   width: 100%;
   max-height: 100%;
-}
+} */
 
 ul {
   list-style-type: none;

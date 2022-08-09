@@ -7,6 +7,10 @@ navLinks.forEach((link) => {
   }
 });
 
+if (activePage.includes('index')){
+  document.querySelector('.portrait-container').classList.add('on');
+}
+
 // Fetch from Spotify API
 fetch("https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=10&offset=0", {
   method: "GET",
