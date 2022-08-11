@@ -16,6 +16,7 @@ body {
   --accent: #E926C2;
   --linkedin: #0072B1;
   --twitter: #1DA1F2;
+  --gradient: rgba(33, 33, 33, 50%);
 
   /* CSS Style */
   background-color: var(--bg-light);
@@ -29,6 +30,7 @@ body.dark {
   --dark-primary: #E0E0E0;
   --light-primary: #424242;
   --btn-bg:#424242;
+  --gradient: rgba(245, 245, 245, 50%);
 }
 
 html, body {
@@ -310,15 +312,31 @@ ul li {
   padding: 46px;
 }
 
-.b {
-  background:url('/resources/images/ribiprob.jpg');
-  /* background: linear-gradient(); */
+#ribiimg {
+  background:linear-gradient(var(--gradient) 100%, var(--gradient) 100%), url('/resources/images/ribi/ribiprob.jpg');
   background-size: cover;
   background-position: center;
-  /* filter: brightness(.4); */
 }
 
-.m {
+#kiteimg {
+  background:linear-gradient(var(--gradient) 100%, var(--gradient) 100%), url('/resources/images/kite/kiteprob.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#lesgoimg {
+  background:linear-gradient(var(--gradient) 100%, var(--gradient) 100%), url('/resources/images/lesgo/lesgoprob.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.backdrop {
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.m, .b {
   background-color: var(--bg-dark);
   color: var(--bg-light);
 }
@@ -327,7 +345,7 @@ ul li {
   margin-top: 1rem;
 }
 
-.m > h2, .m > h3 {
+.m > h2, .m > h3, .backdrop > h2, .backdrop > h3 {
   color: var(--bg-light);
 }
 

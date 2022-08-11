@@ -18,7 +18,7 @@ fetch("https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=10&o
     Accept: "application/json",
     "Content-Type": "application/json",
     Authorization:
-      "Bearer BQCGD8K-K7jRECk9qpSLYpKZvLCHrGs7NI0PwZIySYIXSJgkyElDK3Tb4YKGtd0NJyFAcVFcuZMOxXzHjuU8u5_dwiT6UJydb8Z-yjqGkjuLhiidbx2BqfL4yw7QOZPaGcMUE-49xrGwaBHhpYK18gXW8nN0c4yySL0y1hBH55BNgkTJhFoqDMh3RasRJ9WkIw"
+      "Bearer BQDO2Mq1uefgQmb9aPLWBR-2e9cFVgHBw16ioMH-1whgUT4WdX9SXgBNyK5R1Gib0lbwfKjAXdK_G2KLGlxIdX9RZ-LXeS2BLToNLwH5rnNvr3-0V_G0yLjFNf0hxIWUz7uHmzC7SQY928UP6uYg_lJ6n8BhIGiEbhSeqlui9gvYJsxX7kQevZqYSeOZTbCq-A"
   },
 })
   .then((res) => res.json())
