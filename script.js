@@ -1,4 +1,5 @@
 const activePage = window.location.pathname;
+console.log(activePage);
 
 const navLinks = document.querySelectorAll("nav li a");
 navLinks.forEach((link) => {
@@ -6,6 +7,7 @@ navLinks.forEach((link) => {
     link.parentNode.classList.add("active");
   }
 });
+
 
 if (activePage.includes('index')){
   document.querySelector('.portrait-container').classList.add('on');
