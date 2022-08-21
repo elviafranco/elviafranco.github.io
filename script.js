@@ -7,7 +7,7 @@ navLinks.forEach((link) => {
   }
 });
 
-if (activePage.includes('/')){
+if (activePage.includes('index')){
   document.querySelector('.portrait-container').classList.add('on');
 }
 

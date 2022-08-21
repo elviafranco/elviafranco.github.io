@@ -17,7 +17,6 @@ body {
   --linkedin: #0072B1;
   --twitter: #1DA1F2;
   --gradient: rgba(33, 33, 33, 50%);
-
   /* CSS Style */
   background-color: var(--bg-light);
   color: var(--dark-primary);
@@ -192,6 +191,9 @@ button:hover, ul > li:hover {
     border-left: none;
     border-top: 1px solid var(--light-primary);
     padding: 0;
+  }
+  .section-about > h3 {
+    margin-top: 2rem;
   }
 }
 
