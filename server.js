@@ -1,13 +1,18 @@
+const express = require('express')
+const app = express()
+const PORT = 2121
+require('dotenv').config()
 
-/* Load the HTTP library */
-var http = require('http');
+app.set('view engine', 'ejs')
+app.use(express.static('public'))
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
 
-/* Create an HTTP server to handle responses */
 
-http
-  .createServer(function(request, response) {
-    response.writeHead(200, { 'Content-Type': 'text/plain' });
-    response.write('Hello World');
-    response.end();
-  })
-  .listen(8888);
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(process.env.PORT || PORT, ()=> {
+    console.log(`Server running on port ${PORT}`)
+})
