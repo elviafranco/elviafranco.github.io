@@ -11,9 +11,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route index element={<Home />} />
-        <Route element={<Ribi />} />
-        <Route element={<Kite />} />
-        <Route element={<Lesgo />} />
+        <Route path="/kite" element={<Kite />} />
+        <Route path="/lesgo" element={<Lesgo />} />
+        <Route path="/ribi" element={<Ribi />} />
       </Routes>
     </>
   );
