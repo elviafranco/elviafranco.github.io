@@ -3,7 +3,9 @@ import { NavLink } from "react-router";
 function Button({ label, link }) {
   return (
     <NavLink
-      className="px-4 py-2 inline-flex items-center justify-center rounded-lg text-sm font-medium border-2 border-[var(--border)] hover:text-[var(--accent)] hover:bg-[var(--accent-bg)] hover:border-[var(--accent-border)]"
+      className={({ isActive }) => 
+        `w-16 inline-flex items-center justify-center px-2 py-1 rounded-lg text-sm font-medium ${isActive ? "text-[var(--accent)] bg-[var(--accent-bg)]"  : "hover:text-[var(--text-h)] hover:bg-[var(--bg-s)]"}`
+      }
       to={link}
     >
       {label}
@@ -12,3 +14,4 @@ function Button({ label, link }) {
 }
 
 export default Button;
+
