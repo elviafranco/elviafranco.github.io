@@ -26,20 +26,18 @@ function Navbar() {
   return (
     <nav className="p-4 mb-8 border-b-2 border-[var(--border)]">
       <div className="flex justify-between">
-        <NavLink to="/" 
-        className={({ isActive }) => 
-        `rounded-full border-2 ${isActive ? "border-[var(--accent)]" : "border-[var(--border)] hover:border-[var(--accent-border)]"}`
-      }>
-          <img
-            src={Avatar}
-            alt="headshot"
-            className="size-8 rounded-full"
-          />
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `rounded-full border-2 ${isActive ? "border-[var(--accent)]" : "border-[var(--border)] hover:border-[var(--accent-border)]"}`
+          }
+        >
+          <img src={Avatar} alt="headshot" className="size-8 rounded-full" />
         </NavLink>
         <div className="flex items-center gap-4">
-        <Button link="/kite" label="Kite" />
-        <Button link="/lesgo" label="Lesgo" />
-        <Button link="/ribi" label="Ribi" />
+          <Button link="/kite" label="Kite" />
+          <Button link="/lesgo" label="Lesgo" />
+          <Button link="/ribi" label="Ribi" />
         </div>
         <button
           className="inline-flex items-center justify-center p-2 rounded-lg hover:text-[var(--accent)] hover:bg-[var(--bg-s)]"
