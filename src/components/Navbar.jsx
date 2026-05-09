@@ -24,7 +24,7 @@ function Navbar() {
   }, [theme]);
 
   return (
-    <nav className="p-4 mb-8 border-b-2 border-[var(--border)]">
+    <nav className="p-4 border-b-2 border-[var(--border)]">
       <div className="flex justify-between">
         <NavLink
           to="/"
