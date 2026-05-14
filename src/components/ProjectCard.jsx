@@ -2,10 +2,10 @@ import Button from "./Button";
 
 function ProjectCard({ title, description, image, link }) {
   return (
-    <div className="group rounded-lg overflow-hidden border-2 border-[var(--border)] hover:bg-[var(--bg-s)]">
+    <div className="group rounded-lg overflow-hidden border-1 border-[var(--border)] hover:bg-[var(--bg-s)]">
       <div className="flex gap-3 items-center flex-col md:flex-row">
         {/* Content */}
-        <div className="flex-1 p-4 text-left">
+        <div className="flex-1 p-4 text-left group-hover:text-[var(--text-h)]">
           <h3 className="mb-4">{title}</h3>
           <p>{description}</p>
         </div>

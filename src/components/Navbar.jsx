@@ -24,7 +24,7 @@ function Navbar() {
   }, [theme]);
 
   return (
-    <nav className="p-4 border-b-2 border-[var(--border)]">
+    <nav className="sticky top-0 z-10 backdrop-blur-xs p-4 border-b-1 border-[var(--border)] bg-[var(--bg)]/75">
       <div className="flex justify-between">
         <NavLink
           to="/"
@@ -40,7 +40,7 @@ function Navbar() {
           <Button link="/ribi" label="Ribi" />
         </div>
         <button
-          className="inline-flex items-center justify-center p-2 rounded-lg hover:text-[var(--accent)] hover:bg-[var(--bg-s)]"
+          className="inline-flex items-center justify-center p-2 rounded-lg hover:text-[var(--accent)] hover:bg-[var(--accent-bg)]/25"
           onClick={toggleTheme}
         >
           {theme === "light" ? <Sun size={14} /> : <Moon size={14} />}

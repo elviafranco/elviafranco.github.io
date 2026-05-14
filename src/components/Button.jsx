@@ -1,13 +1,14 @@
 import { NavLink } from "react-router";
 
-function Button({ label, link }) {
+function Button({ label, link, children }) {
   return (
     <NavLink
       className={({ isActive }) =>
-        `w-auto inline-flex items-center justify-center p-2 rounded-lg text-sm font-medium bg-[var(--bg)] ${isActive ? "text-[var(--accent)] bg-[var(--accent-bg)]" : "hover:text-[var(--text-h)] hover:bg-[var(--bg-s)]"}`
+        `w-auto inline-flex gap-2 items-center p-2 rounded-lg text-sm font-medium ${isActive ? "text-[var(--accent)] bg-[var(--bg-s)]" : "hover:text-[var(--accent)] hover:bg-[var(--accent-bg)]/25"}`
       }
       to={link}
     >
+      {children}
       {label}
     </NavLink>
   );
