@@ -10,6 +10,7 @@
   --accent-bg: oklch(97.7% 0.017 320.058);
   --accent-border: oklch(95.2% 0.037 318.852);
   --social-bg: rgba(244, 243, 236, 0.5);
+  --button-text: oklch(53.194% 0.02411 320.924);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
@@ -42,6 +43,7 @@
   --accent-bg: oklch(29.3% 0.136 325.661);
   --accent-border: oklch(40.1% 0.17 325.612);
   --social-bg: rgba(47, 48, 58, 0.5);
+  --button-text: oklch(86.5% 0.012 325.68);
   --shadow:
     rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
 }
@@ -63,11 +65,14 @@
   h2 {
     font-family: var(--heading);
     font-size: large;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text-h);
   }
   h3 {
     font-size: larger;
+    font-weight: 600;
+  }
+  h4 {
     font-weight: 600;
   }
 }

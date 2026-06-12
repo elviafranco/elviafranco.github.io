@@ -4,7 +4,7 @@ import BioPanel from "../components/BioPanel";
 function Home() {
   return (
     <>
-      <div className="px-4 py-8 flex flex-col md:flex-row gap-4">
+      <div className="px-4 py-8 flex flex-col gap-4 md:flex-row ">
         <div className="basis-2/3">
           <ProjectList />
         </div>

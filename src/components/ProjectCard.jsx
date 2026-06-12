@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-function ProjectCard({ title, description, image, link }) {
+function ProjectCard({ title, description, image, link, label }) {
   return (
     <div className="group rounded-lg overflow-hidden border-1 border-[var(--border)] hover:bg-[var(--bg-s)]">
       <div className="flex gap-3 items-center flex-col md:flex-row">
@@ -13,7 +13,7 @@ function ProjectCard({ title, description, image, link }) {
         <div className="relative flex-1 mask-t-from-50% md:mask-t-from-100%  md:mask-l-from-50%">
           <img src={image} alt={title} className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <Button link={link} label={`Explore ${title}`} />
+            <Button link={link} label={label ?? `Explore ${title}`} />
           </div>
         </div>
       </div>
