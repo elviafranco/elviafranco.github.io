@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import KiteImage from "../assets/kite.png";
+import KiteProblem from "../assets/kproblem.jpg";
 import InfoCard from "./InfoCard";
 
 const project = {
@@ -7,6 +8,7 @@ const project = {
   description:
     "Redesigning the communication experience between incarcerated people and their loved ones",
   image: KiteImage,
+  problem: KiteProblem,
   link: "https://dribbble.com/shots/19058909-Kite-Correctional-Services-App",
   label: "Kite case study →",
 };
@@ -45,7 +47,11 @@ function CaseStudyPage() {
             </div>
           </div>
         </InfoCard>
-        <InfoCard label="Problem" className="col-span-1">
+        <InfoCard
+          label="Problem"
+          className="col-span-1"
+          bgImage={project.problem}
+        >
           <p>
             Prison telecom providers hold $1.6B in contracts, yet their apps
             remain outdated, frustrating, and hard to use and adding friction to

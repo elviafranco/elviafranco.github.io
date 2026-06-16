@@ -36,7 +36,7 @@ function BioPanel() {
         </p>
       </InfoCard>
       <InfoCard label="Tech" className="col-span-2">
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap space-x-1">
           <Button link="https://www.figma.com/" label="Figma">
             <FigmaIcon className="size-4 fill-current" />
           </Button>
