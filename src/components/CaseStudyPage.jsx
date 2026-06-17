@@ -10,7 +10,7 @@ const project = {
   image: KiteImage,
   problem: KiteProblem,
   link: "https://dribbble.com/shots/19058909-Kite-Correctional-Services-App",
-  label: "Kite case study →",
+  label: "Explore the Kite case study →",
 };
 
 function CaseStudyPage() {
@@ -23,7 +23,7 @@ function CaseStudyPage() {
         link={project.link}
         label={project.label}
       />
-      <div className="mt-4 gap-4 grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 md:grid-flow-col">
+      <div className="mt-4 gap-4 grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 md:grid-flow-col">
         <InfoCard label="Overview" className="row-span-2 h-full">
           <div className="flex flex-col gap-4">
             <div>
@@ -66,12 +66,6 @@ function CaseStudyPage() {
             A modernized communication app designed with direct input from
             friends and family of incarcerated people, grounded in interviews
             and validated through usability testing.
-          </p>
-        </InfoCard>
-        <InfoCard label="Case Study" className="row-span-2 h-full">
-          <p>
-            Learn more about my process and explore the details in the case
-            study.
           </p>
         </InfoCard>
       </div>
