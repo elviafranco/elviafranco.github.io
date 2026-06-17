@@ -1,7 +1,12 @@
 function InfoCard({ label, className, bgImage, children }) {
+  // 1. Build conditional classes for the outer container
+  const baseCardClasses =
+    "flex flex-col justify-between text-sm text-left rounded-lg border border-(--border)";
+  const nonBgClasses = "p-4 hover:bg-(--bg-s) hover:text-(--text-h)";
+
   return (
     <div
-      className={`${className ?? ""} relative group flex flex-col justify-between text-sm text-left p-4 rounded-lg overflow-hidden border-1 border-[var(--border)] hover:bg-[var(--bg-s)] hover:text-[var(--text-h)]`}
+      className={`${className ?? ""} ${baseCardClasses} ${nonBgClasses}`}
       style={
         bgImage
           ? {
@@ -12,9 +17,19 @@ function InfoCard({ label, className, bgImage, children }) {
           : {}
       }
     >
-      {bgImage && <div className="absolute inset-0 [var(--bg)]/50" />}
-      <h3 className="relative z-10 mb-3">{label}</h3>
-      <div className="relative z-10">{children}</div>
+      {bgImage ? (
+        // 2. If there IS a bgImage, wrap content in the backdrop blur overlay
+        <div className="w-full h-full p-4 rounded-lg backdrop-blur-xs bg-(--bg)/75">
+          <h3 className="mb-3">{label}</h3>
+          {children}
+        </div>
+      ) : (
+        // 3. If there is NO bgImage, just render the content normally
+        <>
+          <h3 className="mb-3">{label}</h3>
+          {children}
+        </>
+      )}
     </div>
   );
 }
