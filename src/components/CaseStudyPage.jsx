@@ -1,14 +1,18 @@
 import ProjectCard from "./ProjectCard";
-import KiteImage from "../assets/kite.png";
-import KiteProblem from "../assets/kproblem.jpg";
+import hero from "../assets/kite/hero.png";
+import overview from "../assets/kite/overview.jpg";
+import problem from "../assets/kite/problem.jpg";
+import outcome from "../assets/kite/outcome.jpg";
 import InfoCard from "./InfoCard";
 
 const project = {
   title: "Kite",
   description:
     "Redesigning the communication experience between incarcerated people and their loved ones",
-  image: KiteImage,
-  problem: KiteProblem,
+  hero: hero,
+  overview: overview,
+  problem: problem,
+  outcome: outcome,
   link: "https://dribbble.com/shots/19058909-Kite-Correctional-Services-App",
   label: "Explore the Kite case study →",
 };
@@ -19,12 +23,16 @@ function CaseStudyPage() {
       <ProjectCard
         title={project.title}
         description={project.description}
-        image={project.image}
+        hero={project.hero}
         link={project.link}
         label={project.label}
       />
       <div className="mt-4 gap-4 grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 md:grid-flow-col">
-        <InfoCard label="Overview" className="row-span-2 h-full">
+        <InfoCard
+          label="Overview"
+          className="row-span-2 h-full"
+          bgImage={project.overview}
+        >
           <div className="flex flex-col gap-4">
             <div>
               <h4>Timeline</h4>
@@ -61,7 +69,11 @@ function CaseStudyPage() {
           </p>
         </InfoCard>
 
-        <InfoCard label="Outcome" className="col-span-1">
+        <InfoCard
+          label="Outcome"
+          className="col-span-1"
+          bgImage={project.outcome}
+        >
           <p>
             A modernized communication app designed with direct input from
             friends and family of incarcerated people, grounded in interviews

@@ -1,7 +1,7 @@
 import ProjectCard from "../components/ProjectCard";
-import Ribi from "../assets/ribi.png";
-import Lesgo from "../assets/lesgo.png";
-import Kite from "../assets/kite.png";
+import Ribi from "../assets/ribi/ribi.png";
+import Lesgo from "../assets/lesgo/lesgo.png";
+import Kite from "../assets/kite/hero.png";
 
 const projects = [
   {
@@ -9,7 +9,7 @@ const projects = [
     title: "Kite",
     description:
       "A better way to serve the communication needs of the incarcerated and their loved ones.",
-    image: Kite,
+    hero: Kite,
     link: "/kite",
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     title: "Lesgo",
     description:
       "Designed to get commuters where they need to be, when they need to be there.",
-    image: Lesgo,
+    hero: Lesgo,
     link: "/lesgo",
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     title: "Ribi",
     description:
       "Simple and effective UI to find your perfect dog walker in minutes.",
-    image: Ribi,
+    hero: Ribi,
     link: "/ribi",
   },
 ];
@@ -38,7 +38,7 @@ function ProjectList() {
           <ProjectCard
             title={project.title}
             description={project.description}
-            image={project.image}
+            hero={project.hero}
             link={project.link}
           />
         </li>

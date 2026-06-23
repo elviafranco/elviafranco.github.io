@@ -1,10 +1,10 @@
 import CaseStudyPage from "../components/CaseStudyPage";
-import KiteImage from "../assets/kite.png";
+import hero from "../assets/kite/hero.png";
 
 const project = {
   title: "Kite",
   description: "A better way to stay in touch.",
-  image: KiteImage,
+  hero: hero,
   link: "https://dribbble.com/shots/19058909-Kite-Correctional-Services-App",
 };
 
