@@ -5,7 +5,7 @@ function ProjectCard({ title, description, hero, link, label }) {
     <div className="group rounded-lg overflow-hidden border border-(--border) hover:bg-(--bg-s)">
       <div className="flex gap-3 items-center flex-col md:flex-row">
         {/* Content */}
-        <div className="flex-1 p-4 text-left group-hover:text-(--text-h)">
+        <div className="flex-1 p-8 text-left group-hover:text-(--text-h)">
           <h3 className="mb-4">{title}</h3>
           <p>{description}</p>
         </div>
